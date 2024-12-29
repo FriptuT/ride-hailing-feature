@@ -1,0 +1,16 @@
+.ride-request-form {
+    position: static;
+    margin-top: 200px; /* Push the element down */
+    margin-left: 13%; 
+    /* Adjust this value for exact horizontal positioning */
+    transform: translateY(-50%);
+    width: 300px;
+    /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* Light background for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}

@@ -1,0 +1,61 @@
+### Find All Content
+GET http://localhost:8080/api/drivers
+
+### create new content
+POST http://localhost:8080/api/drivers
+Content-Type: application/json
+
+{
+  "name": "Tati",
+    "location": {
+      "latitude": 21.99,
+      "longitude": 45.80
+    },
+  "available": true
+}
+
+###
+PUT http://localhost:8080/api/drivers/1
+Content-Type: application/json
+
+
+{
+  "name": "Teodor Friptu",
+    "location": {
+      "latitude": 15.97,
+      "longitude": 78.95
+    },
+  "available": false
+}
+
+###
+DELETE http://localhost:8080/api/drivers/2
+
+
+###
+### create new passenger
+POST http://localhost:8080/api/passengers
+Content-Type: application/json
+
+{
+  "name": "Friptu",
+  "location": {
+    "latitude": 45.25,
+    "longitude": 15.30
+  }
+}
+
+
+###
+PUT http://localhost:8080/api/passengers/3
+Content-Type: application/json
+
+
+{
+  "name": "Passenger 3",
+  "location": {
+    "latitude": 14.99,
+    "longitude": 10.87
+  },
+  "available": false
+}

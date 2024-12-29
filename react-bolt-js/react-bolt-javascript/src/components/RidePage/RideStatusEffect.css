@@ -1,0 +1,39 @@
+.loading-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 5px 10px;
+    position: relative;
+    height: 30px;
+    width: 120px;
+    overflow: hidden;
+}
+
+.loading-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation: loadingEffect 2s linear infinite;
+    opacity: 0.2;
+}
+
+.status-text {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    color: black;
+}
+
+/* Animation */
+@keyframes loadingEffect {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
